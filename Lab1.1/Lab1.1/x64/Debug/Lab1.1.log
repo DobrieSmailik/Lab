@@ -1,0 +1,11 @@
+﻿  Lab1.1.cpp
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(12,45): error C2017: недопустимая escape-последовательность
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(12,47): error C2001: newline в константе
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(12,46): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "n"
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(12,46): error C2065: n: необъявленный идентификатор
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(12,47): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(13,2): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(14,18): warning C4305: инициализация: усечение из "double" в "float"
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(15,11): warning C4309: инициализация: усечение константного значения
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(20,11): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Pip one\Lab1.1\Lab1.1\Lab1.1.cpp(24,15): warning C4305: инициализация: усечение из "double" в "float"
