@@ -1,0 +1,97 @@
+﻿// Lab 3.2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
+#include <iostream>
+using namespace std;
+
+
+int sum(int a, int b) {
+    return a + b;
+}
+
+
+int diff(int a, int b) {
+    return a - b;
+}
+
+int (*getOperation(char op))(int, int) {
+    if (op == '+') {
+        return sum;  
+    }
+    else if (op == '-') {
+        return diff;  
+    }
+    else {
+       
+        return sum;
+    }
+}
+
+
+int sumArray(int* start, int* end) {
+    int total = 0;
+
+    for (int* p = start; p <= end; p++) {
+        total += *p;
+    }
+    return total;
+}
+
+int main() {
+    setlocale(LC_ALL, "ru");
+  
+    int myVar = 42;
+    int* ptr = &myVar;
+    cout << "Адрес ptr: " << ptr << ", значение: " << *ptr << endl;
+    *ptr = 100;
+    cout << "myVar теперь: " << myVar << endl;
+
+    int arr[] = { 10, 20, 30, 40, 50 };
+    int* arrPtr = arr;
+    cout << "Массив: ";
+    for (int i = 0; i < 5; i++) {
+        cout << *(arrPtr + i) << " ";
+    }
+    cout << endl;
+
+    int number = 5;
+    int* const constPtr = &number;
+    *constPtr = 15;
+    cout << "number = " << number << endl;
+
+ 
+    int testArr[] = { 1, 2, 3, 4, 5 };
+    int* start = testArr;              
+    int* end = testArr + 4;            
+    int totalSum = sumArray(start, end);
+    cout << "Сумма элементов массива: " << totalSum << endl; 
+
+    char operation = '+';  
+    int (*operationPtr)(int, int) = getOperation(operation);  
+    int result = operationPtr(10, 3); 
+    cout << "Результат 10 + 3 = " << result << endl;
+
+    operation = '-'; 
+    operationPtr = getOperation(operation);
+    result = operationPtr(10, 3);
+    cout << "Результат 10 - 3 = " << result << endl;
+
+    
+    float* dynamicFloat = new float(3.14f);  
+
+
+    cout << "Динамическое значение: " << *dynamicFloat << endl;
+    delete dynamicFloat;  
+    dynamicFloat = nullptr; 
+
+    return 0;
+}
+// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
+// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
+
+// Советы по началу работы 
+//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
+//   2. В окне Team Explorer можно подключиться к системе управления версиями.
+//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
+//   4. В окне "Список ошибок" можно просматривать ошибки.
+//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
+//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.
