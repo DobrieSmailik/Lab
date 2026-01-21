@@ -1,0 +1,3 @@
+﻿  GA3.cpp
+C:\Users\user\source\repos\GA3\GA3\GA3.cpp(72,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  GA3.vcxproj -> C:\Users\user\source\repos\GA3\x64\Debug\GA3.exe
