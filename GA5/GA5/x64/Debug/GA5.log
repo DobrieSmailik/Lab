@@ -1,0 +1,9 @@
+﻿  GA5.cpp
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(20,5): error C2065: unordered_set: необъявленный идентификатор
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(20,19): error C2275: "std::string": ожидается выражение вместо типа
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(20,27): error C2065: visited: необъявленный идентификатор
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(23,5): error C2065: visited: необъявленный идентификатор
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(31,17): error C2065: visited: необъявленный идентификатор
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(31,43): error C2065: visited: необъявленный идентификатор
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(32,17): error C2065: visited: необъявленный идентификатор
+C:\Users\user\source\repos\GA5\GA5\GA5.cpp(55,12): error C1075: "{": не найдена несоответствующая лексема
